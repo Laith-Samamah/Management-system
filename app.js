@@ -46,3 +46,49 @@ for( let i=0;i<allEmployees.length;i++){
 
 
 
+// *****************************************
+let main = document.querySelector("main")
+
+const eTable = document.createElement('table');
+eTable.setAttribute("class" , "emtable")
+main.appendChild(eTable)
+
+const tHeader = document.createElement('thead');
+eTable.appendChild(tHeader);
+
+const firstData = document.createElement("th");
+tHeader.appendChild(firstData);
+firstData.textContent="ID"
+
+const secondData = document.createElement("th");
+tHeader.appendChild(secondData);
+secondData.textContent="FullName"
+
+const thirdData = document.createElement("th");
+tHeader.appendChild(thirdData);
+thirdData.textContent="Department"
+
+const fourthData = document.createElement("th");
+tHeader.appendChild(fourthData);
+fourthData.textContent="Level"
+
+const fifthData = document.createElement("th");
+tHeader.appendChild(fifthData);
+fifthData.textContent="Salary"
+
+//   Table header ends here
+
+const arr = ['id','fullName','Deparment','Level','salary']
+
+for (let i = 0; i < allEmployees.length ; i++) {
+    
+    const employeeRow = document.createElement('tr');
+    eTable.appendChild(employeeRow);
+
+    for (let c = 0; c < arr.length; c++) {
+        const cell = document.createElement('td')
+        employeeRow.appendChild(cell)
+        cell.textContent= allEmployees[i][arr[c]]
+    }
+
+}

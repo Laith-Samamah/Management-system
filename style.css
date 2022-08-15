@@ -1,0 +1,12 @@
+table ,th,td {
+    color: rgb(15, 53, 129);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+table th{
+    border: 2px solid rgb(0, 0, 0);
+}
+table td{
+    border: 2px solid rgb(0, 0, 0);
+}
