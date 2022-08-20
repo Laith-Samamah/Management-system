@@ -1,3 +1,10 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+main{
+    /* text-align: center; */
+}
 table ,th,td {
     color: rgb(15, 53, 129);
     border: 5px solid rgb(0, 0, 0);
@@ -9,4 +16,11 @@ table th{
 }
 table td{
     border: 2px solid rgb(0, 0, 0);
+}
+
+.all{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
 }
